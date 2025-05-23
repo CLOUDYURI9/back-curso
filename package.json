@@ -1,13 +1,15 @@
 {
-  "name": "biblioteca",
+  "name": "cursos",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "npx tsc && node ./dist/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node dist/app.js",
+    "build": "tsc",
+    "dev": "nodemon --watch src --exec ts-node src/app.ts",
+    "test": "echo \"No tests yet\""
   },
   "keywords": [],
-  "author": "José Mateus R, Lucas Hideki Miyazaki, João Pedro Palomares",
+  "author": "Yuri Dinato da Silva",
   "license": "ISC",
   "description": "",
   "devDependencies": {
